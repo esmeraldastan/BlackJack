@@ -23,8 +23,6 @@ public class Player{
       
       
       //print info
-      System.out.println("You have: "  + numCards + " and " + numCards2);
-      System.out.println("Your total is: "+ totalNum ); 
       
       
       while (totalNum < 21){
@@ -32,11 +30,14 @@ public class Player{
           System.out.println("What you like to do: hit or stay");
           String command = input.next(); 
           if ("hit".equals(command)){
-              System.out.println(numCard3);
-              System.out.println(
-      }
+              System.out.println(numCards3);
+              
+          }
+          if ("stay".equals (command)){
+              System.out.println("Okay");
     
   
-     }
-    }
+           }
+      }
+   }
 }

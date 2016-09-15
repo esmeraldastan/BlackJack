@@ -10,6 +10,11 @@ public class BlackJack{
    public static void manin(String[] args){
        
     System.out.println("Welcome To The Game Of Black Jack!");
+    
+    System.out.println("You have: "  + numCards + " and " + numCards2);
+    System.out.println("Your total is: "+ totalNum ); 
+      System.out.println("The dealer has :" + dealerHand + " and " + "#" );
+      
         
        
     }
