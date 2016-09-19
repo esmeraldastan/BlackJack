@@ -12,7 +12,8 @@ public class HandCards{
     
      int numCards = (int)(Math.random()*11 + 1);
      int numCards2 = (int)(Math.random()* 11 + 1);
-    
+     int numCards3 = (int)(Math.random()* 11 + 1);
+
     //dealers hand
      int dealerHand = (int)(Math.random()* 11 + 1);
      int dealerHand2 = (int)(Math.random()* 11 + 1); 
@@ -20,6 +21,7 @@ public class HandCards{
       
     //total of 2 cards 
      int totalNum = (int)numCards + numCards2 * 1;
+     int total = (int)totalNum + numCards3 * 1;
     
   
 }
