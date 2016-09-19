@@ -21,5 +21,10 @@ public class HandCards{
     //total of 2 cards 
     private int totalNum = (int)numCards + numCards2 * 1;
     
-    public int getNumCards
+    public int getNumCards(){
+        return numCards;
+   }
+    public void setNumCards(int newNumCards){
+    numCards = newNumCards;
+   }
 }
