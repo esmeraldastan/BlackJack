@@ -10,21 +10,16 @@ import java.util.Scanner;
 public class HandCards{
     
     
-    private int numCards = (int)(Math.random()*11 + 1);
-    private int numCards2 = (int)(Math.random()* 11 + 1);
+     int numCards = (int)(Math.random()*11 + 1);
+     int numCards2 = (int)(Math.random()* 11 + 1);
     
     //dealers hand
-    private int dealerHand = (int)(Math.random()* 11 + 1);
-    private int dealerHand2 = (int)(Math.random()* 11 + 1); 
+     int dealerHand = (int)(Math.random()* 11 + 1);
+     int dealerHand2 = (int)(Math.random()* 11 + 1); 
        
       
     //total of 2 cards 
-    private int totalNum = (int)numCards + numCards2 * 1;
+     int totalNum = (int)numCards + numCards2 * 1;
     
-    public int getNumCards(){
-        return numCards;
-   }
-    public void setNumCards(int newNumCards){
-    numCards = newNumCards;
-   }
+  
 }

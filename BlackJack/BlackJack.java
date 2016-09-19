@@ -13,7 +13,9 @@ public class BlackJack{
     HandCards cards = new HandCards();
     System.out.println("Welcome To The Game Of Black Jack!");
     System.out.println("");
-    System.out.println("You have " + cards.numCards);
+    System.out.println("You have " + cards.numCards + " and " + cards.numCards2 );
+    System.out.println("Your total value is: " + cards.totalNum); 
+    System.out.println("The dealer has: " + cards.dealerHand + " and " + "# " );
 
     
     }
