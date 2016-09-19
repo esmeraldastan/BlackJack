@@ -34,9 +34,9 @@ public class BlackJack{
     
   
            }
-         if ("done".equals(command)){
+         if ("quit".equals(command)){
              System.exit(0);
-      }
+         }
     
     }
   }
