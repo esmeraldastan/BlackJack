@@ -35,23 +35,22 @@ public class BlackJack{
          if ("hit".equals (command)){
              System.out.println("Now you have: " +  cards.numCards + ", " + cards.numCards2 + ", " + "and " + cards.numCards3);
              System.out.println("Your total is now: " + cards.total);
-             System.out.println("Would you like to continue...")
-         else ("stand".equals(command)){
-            System.out.println("The dealer has: " + cards.dealerHand + "and " + cards.dealerHand2 )
+             System.out.println("Would you like to continue...\n type 'c'");
+            }
+         else if("stand".equals(command)){
+            System.out.println("The dealer has: " + cards.dealerHand + "and " + cards.dealerHand2 );
          }
          //work on 
-         if ("continue".equal(command)){
-            System.out.println(" hit or stay")
+         
+         }
+         if ("quit".equals(command)){
+             System.exit(0);
          }
     
   
            }
           //end game
-         if ("quit".equals(command)){
-             System.exit(0);
          }
-    
-    }
-  }
-}
+
+
 
