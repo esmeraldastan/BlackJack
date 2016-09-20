@@ -8,22 +8,19 @@
 import java.lang.Math;
 import java.util.Scanner; 
 public class HandCards{
-    
-    
-     int numCards = (int)(Math.random()*11 + 1);
-     int numCards2 = (int)(Math.random()* 11 + 1);
-     int numCards3 = (int)(Math.random()* 11 + 1);
+    int numCards;
+    int numCards2;
+    int total;
+    public HandCards(){
+        numCards = (int)(Math.random()*10 + 1);
+        numCards2 = (int)(Math.random()* 10 + 1);
 
-    //dealers hand
-     int dealerHand = (int)(Math.random()* 11 + 1);
-     int dealerHand2 = (int)(Math.random()* 11 + 1); 
-       
-      
-    //total of 2 cards 
-     int totalNum = (int)numCards + numCards2 * 1;
-     int total = (int)totalNum + numCards3 * 1;
-     
-     
-     int dltotal = (int)dealerHand + dealerHand2 * 1;
-  
+        //total of 2 cards 
+        total = numCards + numCards2;
+    }
+    public int hit(){
+        int card = (int)(Math.random()*10 + 1);
+        total += card;
+        return card;
+    }
 }

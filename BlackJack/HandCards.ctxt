@@ -1,2 +1,6 @@
 #BlueJ class context
-numComments=0
+comment0.params=
+comment0.target=HandCards()
+comment1.params=
+comment1.target=int\ hit()
+numComments=2
