@@ -22,7 +22,7 @@ public class BlackJack{
     System.out.println("The dealer has: " + cards.dealerHand + " and " + "# " );
     
     //while loop
-    while (cards.totalNum < 21){
+    while (cards.totalNum <= 21){
          Scanner input = new Scanner(System.in);
          System.out.println("What you like to do: hit or stand");
          String command = input.next(); 
@@ -35,22 +35,18 @@ public class BlackJack{
          if ("hit".equals (command)){
              System.out.println("Now you have: " +  cards.numCards + ", " + cards.numCards2 + ", " + "and " + cards.numCards3);
              System.out.println("Your total is now: " + cards.total);
-             System.out.println("Would you like to continue...\n type 'c'");
             }
          else if("stand".equals(command)){
-            System.out.println("The dealer has: " + cards.dealerHand + "and " + cards.dealerHand2 );
+            System.out.println("The dealer reveals the second card: " + cards.dealerHand2 );
+            System.out.println("The dealer now has: "  + cards.dealerHand + "and " + cards.dealerHand2);
+            System.out.println("The dealer's total is now: " + cards.dltotal ); 
          }
-         //work on 
-         
-         }
+         //end game 
          if ("quit".equals(command)){
              System.exit(0);
          }
     
   
            }
-          //end game
-         }
-
-
-
+        }
+        }

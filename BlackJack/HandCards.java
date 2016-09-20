@@ -22,6 +22,8 @@ public class HandCards{
     //total of 2 cards 
      int totalNum = (int)numCards + numCards2 * 1;
      int total = (int)totalNum + numCards3 * 1;
-    
+     
+     
+     int dltotal = (int)dealerHand + dealerHand2 * 1;
   
 }
