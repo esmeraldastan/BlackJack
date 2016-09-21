@@ -12,34 +12,35 @@ public class BlackJack{
     
     //intro to second class
     HandCards cards = new HandCards();
+    HandCards hit = new HandCards();
     
     
     System.out.println("Welcome To The Game Of Black Jack!");
     System.out.println("");
     // print out cards
     System.out.println("You have " + cards.numCards + " and " + cards.numCards2 );
-    System.out.println("Your total value is: " + cards.totalNum); 
+    System.out.println("Your total value is: " + cards.total); 
     System.out.println("The dealer has: " + cards.dealerHand + " and " + "# " );
     
     //while loop
-    while (cards.totalNum <= 21){
+    while (cards.total <= 21){
          Scanner input = new Scanner(System.in);
          System.out.println("What you like to do: hit or stay");
          String command = input.next(); 
          if ("stay".equals(command)){
-              System.out.println(" Alright then....");
-              System.out.println(" The dealder has: " + cards.dealerHand + " and " + cards.dealerHand2);
+              System.out.println("Alright then....");
+              System.out.println("The dealder has: " + cards.dealerHand + " and " + cards.dealerHand2);
               
           }
           //commands
          if ("hit".equals (command)){
-             System.out.println("Now you have: " +  cards.numCards + ", " + cards.numCards2 + ", " + " and " + cards.numCards);
+             System.out.println("Now you have: " +  cards.numCards + "and " + cards.numCards2 );
              System.out.println("Your total is now: " + cards.total);
             }
          else if("stay".equals(command)){
-            System.out.println("The dealer reveals the second card: " + cards.dealerHand2 );
-            System.out.println("The dealer now has: "  + cards.dealerHand + "and " + cards.dealerHand2);
-            System.out.println("The dealer's total is now: " + cards.dltotal ); 
+            System.out.println("The dealer reveals the second card: " + cards.numCards2 );
+            System.out.println("The dealer now has: "  + cards.numCards + "and " + cards.numCards2);
+            System.out.println("The dealer's total is now: " + cards.total ); 
          }
          //end game 
          if ("quit".equals(command)){
