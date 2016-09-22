@@ -34,7 +34,7 @@ public class BlackJack{
           }
           //commands
          if ("hit".equals (command)){
-             System.out.println("Now you have: " +  cards.numCards + "and " + cards.numCards2 );
+             System.out.println("Now you have: " +  cards.numCards + " , " + cards.numCards2 + "," + " and " + cards.hit());
              System.out.println("Your total is now: " + cards.total);
             }
          else if("stay".equals(command)){
