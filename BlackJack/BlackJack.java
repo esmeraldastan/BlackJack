@@ -27,27 +27,35 @@ public class BlackJack{
          Scanner input = new Scanner(System.in);
          System.out.println("What you like to do: hit or stay");
          String command = input.next(); 
-         if ("stay".equals(command)){
-              System.out.println("Alright then....");
-              System.out.println("The dealder has: " + cards.dealerHand + " and " + cards.dealerHand2);
-              
-          }
-          //commands
+         
+        //commands
          if ("hit".equals (command)){
              System.out.println("Now you have: " +  cards.numCards + " , " + cards.numCards2 + "," + " and " + cards.hit());
              System.out.println("Your total is now: " + cards.total);
-            }
+             if (cards.total < 21 && "hit".equals(command)){
+                 System.out.println("New card value is; " + cards.hit());
+                 System.out.println("Your total value is now: " + cards.total);
+                    if (cards.total > 21){
+                        System.out.println("Haha better luck next time!!");
+                 }
          else if("stay".equals(command)){
             System.out.println("The dealer reveals the second card: " + cards.numCards2 );
             System.out.println("The dealer now has: "  + cards.numCards + "and " + cards.numCards2);
             System.out.println("The dealer's total is now: " + cards.total ); 
+            System.out.println("...");
          }
-         //end game 
-         if ("quit".equals(command)){
+        }
+       }
+       if ("quit".equals(command)){
              System.exit(0);
-         }
+       }
+    
+       }
+         //end game
+      }
     
   
            }
-        }
-        }
+        
+      
+   
