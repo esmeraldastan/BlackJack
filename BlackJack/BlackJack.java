@@ -28,34 +28,38 @@ public class BlackJack{
          System.out.println("What you like to do: hit or stay");
          String command = input.next(); 
          
-        //commands
          if ("hit".equals (command)){
              System.out.println("Now you have: " +  cards.numCards + " , " + cards.numCards2 + "," + " and " + cards.hit());
              System.out.println("Your total is now: " + cards.total);
-             if (cards.total < 21 && "hit".equals(command)){
-                 System.out.println("New card value is; " + cards.hit());
-                 System.out.println("Your total value is now: " + cards.total);
-                    if (cards.total > 21){
-                        System.out.println("Haha better luck next time!!");
-                 }
+             if (cards.total > 21){
+                    System.out.println("Haha better luck next time!!");   
+                }
+                 if (cards.total == 21){
+              System.out.println("WHAT?!?! Great you won!");
+             }
+      }
          else if("stay".equals(command)){
             System.out.println("The dealer reveals the second card: " + cards.numCards2 );
             System.out.println("The dealer now has: "  + cards.numCards + "and " + cards.numCards2);
             System.out.println("The dealer's total is now: " + cards.total ); 
             System.out.println("...");
-         }
-        }
-       }
-       if ("quit".equals(command)){
+            if (cards.totaldeal <= 17){
+                System.out.println("Dealers new card is; " + cards.hit2());
+                System.out.println("New total is:" + cards.totaldeal);
+            
+            while (cards.totaldeal < 17){
+                System.out.println("The dealer now has: " + cards.hit2());
+                System.out.println("The dealer's total is now: " + cards.totaldeal);
+          }  
+          if ("quit".equals(command)){
              System.exit(0);
-       }
-    
-       }
-         //end game
-      }
-    
-  
            }
-        
+        }
+      }
+    }
+  }
+}
+
+    
       
    
