@@ -50,13 +50,19 @@ public class BlackJack{
             while (cards.totaldeal < 17){
                 System.out.println("The dealer now has: " + cards.hit2());
                 System.out.println("The dealer's total is now: " + cards.totaldeal);
-          }  
-          if ("quit".equals(command)){
+            }
+        }
+        if (cards.totaldeal > 21){
+            System.out.println(" The dealer has a greater value then 21. You have Won!!") ;
+        }
+        if (cards.totaldeal == cards.total ){
+            System.out.println("How?! you and the dealer have the same value!");
+        }
+        if ("quit".equals(command)){
              System.exit(0);
            }
         }
-      }
-    }
+   }
   }
 }
 
