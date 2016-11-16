@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=Array()
-comment1.params=num\ index
-comment1.target=void\ addNum(int,\ int)
-comment2.params=index
-comment2.target=void\ removeNum(int)
-numComments=3
